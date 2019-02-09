@@ -1,0 +1,48 @@
+*{
+    /* outline: 2px dotted red; */
+    color: black;
+    padding: 10px;
+}
+
+#container{
+    display: block;
+    height: 900px;
+    width: 800px;
+}
+
+.left_box{
+    background: gray;
+    display: inline-block;
+    width: 40%;
+    height: 775PX; 
+    margin: 10px;
+}
+
+.right_box{
+    background: rgb(44, 121, 173);
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+    height: 775px;
+    margin: 10px;
+    font-size: 2em;
+}
+
+#submit{
+    color: black;
+}
+
+table{
+    font-size: 1.5em;
+    width: 90%
+
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+
+.qty{
+    color: gray;
+}

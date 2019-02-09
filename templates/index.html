@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <link rel='stylesheet' type='text/css' href="{{ url_for('static', filename='css/styles.css'   ) }}">
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css' integrity='sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS'
+        crossorigin='anonymous'>
+</head>
+
+<body>
+    <div id='container_fluid'>
+        <div class='left_box'>
+            <h1>Dojo Fruit Store!</h1>
+            <h2><span class='underline'>What would you like to buy?</span></h2>
+            <form action='/checkout' method='post'>
+                <table>
+                    <thead>
+                        <th>Fruit Name</th>
+                        <th>Quantity</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Strawbery</td>
+                            <td>
+                                <select name='straw_quantity'>
+                                    <option value='1'>1</option>
+                                    <option value='2'>2</option>
+                                    <option value='3'>3</option>
+                                    <option value='4'>4</option>
+                                    <option value='5'>5</option>
+                                    <option value='6'>6</option>
+                                    <option value='7'>7</option>
+                                    <option value='8'>8</option>
+                                    <option value='9'>9</option>
+                                    <option value='10'>10</option>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Rasberry</td>
+                            <td>
+                                <select name='raspberry_quantity'>
+                                    <option value='1'>1</option>
+                                    <option value='2'>2</option>
+                                    <option value='3'>3</option>
+                                    <option value='4'>4</option>
+                                    <option value='5'>5</option>
+                                    <option value='6'>6</option>
+                                    <option value='7'>7</option>
+                                    <option value='8'>8</option>
+                                    <option value='9'>9</option>
+                                    <option value='10'>10</option>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Apple</td>
+                            <td>
+                                <select name='apple_quantity'>
+                                    <option value='1'>1</option>
+                                    <option value='2'>2</option>
+                                    <option value='3'>3</option>
+                                    <option value='4'>4</option>
+                                    <option value='5'>5</option>
+                                    <option value='6'>6</option>
+                                    <option value='7'>7</option>
+                                    <option value='8'>8</option>
+                                    <option value='9'>9</option>
+                                    <option value='10'>10</option>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3><span class='underline'>Your Information</span></h3>
+                <table>
+
+                    <tbody>
+                        <tr>
+                            <td>Name:</td>
+                            <td><textarea name='student_name' placeholder='Name' rows='1' cols='18'></textarea></td>
+
+                        </tr>
+                        <tr>
+                            <td>Your Student ID:</td>
+                            <td><textarea name='student_id' placeholder='punch in ID' rows='1' cols='18'></textarea></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <input type='submit'  value='Buy me stuff'>
+            </form>
+        </div>
+        <div class='right_box'>
+            <div>Welcome to Dojo Fruit Store!</div>
+            <div>Your dojo decided to buy fruits for all the students! Please use this app to tell us what you would
+                like to have! Once we get your order, we'll charge your student account automatically.</div>
+            <div>Dojo Fruit Store is proudly built using Flask.</div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css'   ) }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="container_fluid">
+        <h1>Thank you for your order!</h1>
+        <p>We ordered {{total_items}} for you and charged your student account on {{time_stamp}}.</p>
+        <h2>You've ordered</h2>
+        <table>
+            <thead>
+                <th>Fruit Name</th>
+                <th>Quantity</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Strawberry</td>
+                    <td>{{straw}}</td>    
+                </tr>
+                <tr>
+                    <td>Raspberry</td>
+                    <td>{{rasp}}</td>
+                </tr>
+                <tr>
+                    <td>Apple</td>
+                    <td>{{apple}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><span class='underline'>Your Information</span></h2>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Name:</td>
+                    <td>{{name}}</td>
+                </tr>
+                <tr>
+                    <td>Your Student ID:</td>
+                    <td>{{s_id}}</td>
+                </tr>
+            </tbody>
+        </table>
+           
+</div>
+</body>
+
+</html>
